@@ -13,8 +13,6 @@ npm i --save-dev csstate
 
 ### Usage
 
-Create an instance.
-
 ```
   var CSSTate = require('csstate');
   var cst = new CSSTate();
