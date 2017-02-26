@@ -13,7 +13,7 @@ npm i --save-dev csstate
 
 ### Usage
 
-```
+```js
   var CSSTate = require('csstate');
   var cst = new CSSTate();
 
@@ -46,7 +46,7 @@ Remove stylesheet
 
 ### Usage in tests
 
-```
+```js
   before(() => {
     cst.rule(defaultRules); // Load default rules
   });

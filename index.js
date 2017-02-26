@@ -1,13 +1,15 @@
 /**
  * CSSTate is a simple util for dynamic CSS style handling.
  *
- * There is only two functions
+ * There is only three functions
  *
  *  rule(selector, property, value)
  *  rule(object)
  *
  *  remove(selector, property)
  *  remove(object)
+ *
+ *  exit()
  *
  *  License MIT (c) 2017 Svetlana Linuxenko
  */
