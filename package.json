@@ -1,6 +1,6 @@
 {
   "name": "csstate",
-  "version": "0.0.1",
+  "version": "1.0.0",
   "description": "Simple library for handling different css states and properties. Made for testing css related things with mocha or something like this.",
   "main": "index.js",
   "directories": {
