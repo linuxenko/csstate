@@ -13,7 +13,7 @@ npm i --save-dev csstate
 
 ### Usage
 
-```
+```js
   var CSSTate = require('csstate');
   var cst = new CSSTate();
 
@@ -36,7 +36,7 @@ Create/modify rules
 
 Remove rules
 
-`remove(selector, proprery, value)`
+`remove(selector, proprery)`
 
 `remove(object)`
 
@@ -46,12 +46,12 @@ Remove stylesheet
 
 ### Usage in tests
 
-```
-  before(() => {
+```js
+  beforeEach(() => {
     cst.rule(defaultRules); // Load default rules
   });
 
-  after(() => {
+  afterEach(() => {
     cst.exit(); // Remove entire stylesheet
   });
 ```
