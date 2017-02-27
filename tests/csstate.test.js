@@ -4,6 +4,7 @@ var CST = require('../');
 describe('Test csstate initalization', function () {
   it('should create/remove stylesheet', function () {
     var cst = new CST();
+    cst.init();
     expect(document.styleSheets.length).to.be.equal(1);
     cst.exit();
     expect(document.styleSheets.length).to.be.equal(0);
@@ -11,6 +12,7 @@ describe('Test csstate initalization', function () {
 
   it('should insert rules into css', function () {
     var cst = new CST();
+    cst.init();
     cst._insert('body', 'background', 'blue');
     cst._insert('p > a', 'font-size', '1px');
     cst._insert('a', 'font-size', '2px');
@@ -27,6 +29,7 @@ describe('Test csstate initalization', function () {
 
   it('should insert/remove selectors', function () {
     var cst = new CST();
+    cst.init();
     cst._insert('body', 'background', 'blue');
     cst._insert('p > a', 'font-size', '1px');
 
@@ -42,6 +45,7 @@ describe('Test csstate initalization', function () {
 
   it('should insert/remove rules', function () {
     var cst = new CST();
+    cst.init();
     cst._insert('body', 'background', 'blue');
     cst._insert('p > a', 'font-size', '1px');
     cst._insert('p > a', 'font-weight', 'bold');
@@ -58,6 +62,7 @@ describe('Test csstate initalization', function () {
 
   it('should modify rules', function () {
     var cst = new CST();
+    cst.init();
     cst._insert('body', 'background', 'blue');
     cst._insert('p > a', 'font-size', '1px');
     cst._insert('p > a', 'font-weight', 'bold');
