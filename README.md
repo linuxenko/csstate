@@ -36,7 +36,7 @@ Create/modify rules
 
 Remove rules
 
-`remove(selector, proprery, value)`
+`remove(selector, proprery)`
 
 `remove(object)`
 
@@ -47,11 +47,11 @@ Remove stylesheet
 ### Usage in tests
 
 ```js
-  before(() => {
+  beforeEach(() => {
     cst.rule(defaultRules); // Load default rules
   });
 
-  after(() => {
+  afterEach(() => {
     cst.exit(); // Remove entire stylesheet
   });
 ```
