@@ -14,6 +14,8 @@
       "it" : true,
       "window" : true,
       "document" : true,
-      "expect" : true
+      "expect" : true,
+      "beforeEach" : true,
+      "afterEach" : true
     }
 }

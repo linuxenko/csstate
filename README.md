@@ -56,6 +56,8 @@ Remove stylesheet
   });
 ```
 
+See the [example](https://github.com/linuxenko/csstate/blob/master/tests/mocha-test.test.js).
+
 ### License
 
 MIT (c) 2017 Svetlana Linuxenko

@@ -17,8 +17,6 @@ var CSSTate = function (opt) {
   opt = opt || {};
   this.media = opt.media || 'screen';
   this.id = opt.id || null;
-
-  this.init();
 };
 
 CSSTate.prototype = {
@@ -42,10 +40,15 @@ CSSTate.prototype = {
   exit: function () {
     if (this.el) {
       this.head().removeChild(this.el);
+      this.el = null;
     }
   },
 
   rule: function (selector, property, value) {
+    if (!this.el) {
+      this.init();
+    }
+
     if (typeof selector === 'string') {
       this._insert(selector, property, value);
     } else {
@@ -57,6 +60,10 @@ CSSTate.prototype = {
   },
 
   remove: function (selector, property) {
+    if (!this.el) {
+      return;
+    }
+
     if (typeof selector === 'string') {
       this._remove(selector, property);
     } else {
