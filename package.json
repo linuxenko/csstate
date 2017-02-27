@@ -7,7 +7,7 @@
     "test": "tests"
   },
   "scripts": {
-    "test": "npm run lint && npm run karma",
+    "test": "npm run lint && npm run karma && codecov",
     "lint": "eslint .",
     "karma": "karma start"
   },
@@ -30,6 +30,7 @@
     "browserify": "^14.1.0",
     "browserify-istanbul": "^2.0.0",
     "chai": "^3.5.0",
+    "codecov": "^1.0.1",
     "coveralls": "^2.11.16",
     "eslint": "^3.16.1",
     "eslint-config-standard": "^6.2.1",
