@@ -33,6 +33,11 @@ describe('Example of usage CSSTate', function () {
     cst.rule('li', 'font-weight', 'bold');
   });
 
+  it('should remove default rules', function () {
+    cst.remove(defaultRules, true);
+    expect(cst.rules.length).to.be.equal(0);
+  });
+
   it('should restore default rules', function () {
     expect(cst.rules[0].selectorText).to.be.equal('body');
     expect(cst.rules[1].selectorText).to.be.equal('#content');

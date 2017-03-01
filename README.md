@@ -36,9 +36,13 @@ Create/modify rules
 
 Remove rules
 
+`remove(selector)`
+
 `remove(selector, proprery)`
 
-`remove(object)`
+`remove(object)` - remove specified properties
+
+`remove(object, true)` - remove by selectors, executes `remove(selector)` for each selector inside of the object.
 
 Remove stylesheet
 

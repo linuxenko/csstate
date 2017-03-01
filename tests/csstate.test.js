@@ -10,6 +10,12 @@ describe('Test csstate initalization', function () {
     expect(document.styleSheets.length).to.be.equal(0);
   });
 
+  it('should handle unitialized rules set', function () {
+    var cst = new CST();
+    cst.remove('body');
+    cst.exit();
+  });
+
   it('should insert rules into css', function () {
     var cst = new CST();
     cst.init();

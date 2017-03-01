@@ -68,8 +68,15 @@ CSSTate.prototype = {
       this._remove(selector, property);
     } else {
       var selectors = this._objToArray(selector);
-      for (var i = 0; i < selectors.length; i++) {
-        this._remove.apply(this, selectors[i]);
+      var i;
+      if (property === true) {
+        for (i = 0; i < selectors.length; i++) {
+          this._remove(selectors[i][0]);
+        }
+      } else {
+        for (i = 0; i < selectors.length; i++) {
+          this._remove.apply(this, selectors[i]);
+        }
       }
     }
   },
