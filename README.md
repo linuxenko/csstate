@@ -25,6 +25,7 @@ npm i --save-dev csstate
 
   cst.exit();
 ```
+Check out _[How to test DOM elements with CSSTate](https://medium.com/@linuxenko/how-to-test-dom-elements-with-csstate-749a6b3c5ce5)_ tutorial.
 
 ### Features
 
