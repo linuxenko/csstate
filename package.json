@@ -30,7 +30,7 @@
     "browserify": "^14.1.0",
     "browserify-istanbul": "^2.0.0",
     "chai": "^3.5.0",
-    "codecov": "^1.0.1",
+    "codecov": "^3.6.5",
     "coveralls": "^3.0.7",
     "eslint": "^6.6.0",
     "eslint-config-standard": "^6.2.1",
